@@ -568,12 +568,13 @@ function mkPg(elId,cur,tot,count){
   el.innerHTML=h;
 }
 document.getElementById("pg2").addEventListener("click",function(e){var b=e.target.closest(".pb");if(!b)return;pg2=parseInt(b.getAttribute("data-pg"),10);renderT2();});
-document.getElementById("pg3").addEventListener("click",function(e){var b=e.target.closest(".pb");if(!b)return;pg3=parseInt(b.getAttribute("data-pg"),10);renderT3();});
+document.getElementById("pg3").addEventListener("click",function(e){var b=e.target.closest(".pb");if(!b)return;pg3=parseInt(b.getAttribute("data-pg"),10);renderT3();})
 
 function switchTab(i){
   document.querySelectorAll(".sec").forEach(function(s,j){s.classList.toggle("on",j===i);});
   document.querySelectorAll(".nb").forEach(function(b,j){b.classList.toggle("on",j===i);});
 }
+
 
 buildMbars();initOff1();initFilters();renderAll();
 
